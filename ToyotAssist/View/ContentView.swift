@@ -14,6 +14,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                NotificationView()
                 ForEach(reports) { report in
                     VStack {
                         Text(report.reportType)

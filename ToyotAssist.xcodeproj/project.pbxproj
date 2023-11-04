@@ -16,6 +16,7 @@
 		4222E1D12AF6E351007764B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4222E1D02AF6E351007764B3 /* GoogleService-Info.plist */; };
 		4222E1D42AF6E79F007764B3 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 4222E1D32AF6E79F007764B3 /* FirebaseMessaging */; };
 		4222E1D62AF6E8D1007764B3 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4222E1D52AF6E8D1007764B3 /* NotificationsManager.swift */; };
+		4222E1D92AF6F5FA007764B3 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4222E1D82AF6F5FA007764B3 /* NotificationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4222E1CF2AF6E0E1007764B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		4222E1D02AF6E351007764B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4222E1D52AF6E8D1007764B3 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
+		4222E1D82AF6F5FA007764B3 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,9 +69,9 @@
 				4222E1CF2AF6E0E1007764B3 /* Info.plist */,
 				4222E1CE2AF6E0A2007764B3 /* ToyotAssist.entitlements */,
 				4222E1BC2AF6D346007764B3 /* ToyotAssistApp.swift */,
+				4222E1D72AF6F5CA007764B3 /* View */,
 				4222E1D52AF6E8D1007764B3 /* NotificationsManager.swift */,
 				4222E1CC2AF6D42A007764B3 /* Report.swift */,
-				4222E1BE2AF6D346007764B3 /* ContentView.swift */,
 				4222E1CA2AF6D3F9007764B3 /* ReportIntent.swift */,
 				4222E1C02AF6D348007764B3 /* Assets.xcassets */,
 				4222E1C22AF6D348007764B3 /* Preview Content */,
@@ -83,6 +85,15 @@
 				4222E1C32AF6D348007764B3 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4222E1D72AF6F5CA007764B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4222E1BE2AF6D346007764B3 /* ContentView.swift */,
+				4222E1D82AF6F5FA007764B3 /* NotificationView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 				4222E1BD2AF6D346007764B3 /* ToyotAssistApp.swift in Sources */,
 				4222E1D62AF6E8D1007764B3 /* NotificationsManager.swift in Sources */,
 				4222E1CD2AF6D42A007764B3 /* Report.swift in Sources */,
+				4222E1D92AF6F5FA007764B3 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
