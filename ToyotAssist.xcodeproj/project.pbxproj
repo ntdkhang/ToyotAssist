@@ -11,6 +11,11 @@
 		4222E1BF2AF6D346007764B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4222E1BE2AF6D346007764B3 /* ContentView.swift */; };
 		4222E1C12AF6D348007764B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4222E1C02AF6D348007764B3 /* Assets.xcassets */; };
 		4222E1C42AF6D348007764B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4222E1C32AF6D348007764B3 /* Preview Assets.xcassets */; };
+		4222E1CB2AF6D3F9007764B3 /* ReportIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4222E1CA2AF6D3F9007764B3 /* ReportIntent.swift */; };
+		4222E1CD2AF6D42A007764B3 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4222E1CC2AF6D42A007764B3 /* Report.swift */; };
+		4222E1D12AF6E351007764B3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4222E1D02AF6E351007764B3 /* GoogleService-Info.plist */; };
+		4222E1D42AF6E79F007764B3 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 4222E1D32AF6E79F007764B3 /* FirebaseMessaging */; };
+		4222E1D62AF6E8D1007764B3 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4222E1D52AF6E8D1007764B3 /* NotificationsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		4222E1BE2AF6D346007764B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4222E1C02AF6D348007764B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4222E1C32AF6D348007764B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4222E1CA2AF6D3F9007764B3 /* ReportIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportIntent.swift; sourceTree = "<group>"; };
+		4222E1CC2AF6D42A007764B3 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		4222E1CE2AF6E0A2007764B3 /* ToyotAssist.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ToyotAssist.entitlements; sourceTree = "<group>"; };
+		4222E1CF2AF6E0E1007764B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		4222E1D02AF6E351007764B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4222E1D52AF6E8D1007764B3 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4222E1D42AF6E79F007764B3 /* FirebaseMessaging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +63,14 @@
 		4222E1BB2AF6D346007764B3 /* ToyotAssist */ = {
 			isa = PBXGroup;
 			children = (
+				4222E1D02AF6E351007764B3 /* GoogleService-Info.plist */,
+				4222E1CF2AF6E0E1007764B3 /* Info.plist */,
+				4222E1CE2AF6E0A2007764B3 /* ToyotAssist.entitlements */,
 				4222E1BC2AF6D346007764B3 /* ToyotAssistApp.swift */,
+				4222E1D52AF6E8D1007764B3 /* NotificationsManager.swift */,
+				4222E1CC2AF6D42A007764B3 /* Report.swift */,
 				4222E1BE2AF6D346007764B3 /* ContentView.swift */,
+				4222E1CA2AF6D3F9007764B3 /* ReportIntent.swift */,
 				4222E1C02AF6D348007764B3 /* Assets.xcassets */,
 				4222E1C22AF6D348007764B3 /* Preview Content */,
 			);
@@ -83,6 +101,9 @@
 			dependencies = (
 			);
 			name = ToyotAssist;
+			packageProductDependencies = (
+				4222E1D32AF6E79F007764B3 /* FirebaseMessaging */,
+			);
 			productName = ToyotAssist;
 			productReference = 4222E1B92AF6D346007764B3 /* ToyotAssist.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +132,9 @@
 				Base,
 			);
 			mainGroup = 4222E1B02AF6D346007764B3;
+			packageReferences = (
+				4222E1D22AF6E79F007764B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 4222E1BA2AF6D346007764B3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +151,7 @@
 			files = (
 				4222E1C42AF6D348007764B3 /* Preview Assets.xcassets in Resources */,
 				4222E1C12AF6D348007764B3 /* Assets.xcassets in Resources */,
+				4222E1D12AF6E351007764B3 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4222E1BF2AF6D346007764B3 /* ContentView.swift in Sources */,
+				4222E1CB2AF6D3F9007764B3 /* ReportIntent.swift in Sources */,
 				4222E1BD2AF6D346007764B3 /* ToyotAssistApp.swift in Sources */,
+				4222E1D62AF6E8D1007764B3 /* NotificationsManager.swift in Sources */,
+				4222E1CD2AF6D42A007764B3 /* Report.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,12 +297,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ToyotAssist/ToyotAssist.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToyotAssist/Preview Content\"";
 				DEVELOPMENT_TEAM = T76274KP97;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToyotAssist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -298,12 +328,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ToyotAssist/ToyotAssist.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ToyotAssist/Preview Content\"";
 				DEVELOPMENT_TEAM = T76274KP97;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ToyotAssist/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4222E1D22AF6E79F007764B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.17.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4222E1D32AF6E79F007764B3 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4222E1D22AF6E79F007764B3 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4222E1B12AF6D346007764B3 /* Project object */;
 }
