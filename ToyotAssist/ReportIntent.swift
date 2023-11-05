@@ -22,9 +22,9 @@ struct ReportIntent: AppIntent {
     var license: String
     
     func perform() async throws -> some IntentResult {
-        let container = try ModelContainer(for: Report.self)
-        let context = await container.mainContext
-        context.insert(Report(reportType: report, licensePlate: license))
+//        let container = try ModelContainer(for: Report.self)
+//        let context = await container.mainContext
+//        context.insert(Report(reportType: report, licensePlate: license))
         return .result()
     }
 }

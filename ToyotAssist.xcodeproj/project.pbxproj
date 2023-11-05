@@ -17,6 +17,7 @@
 		4222E1D42AF6E79F007764B3 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 4222E1D32AF6E79F007764B3 /* FirebaseMessaging */; };
 		4222E1D62AF6E8D1007764B3 /* NotificationsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4222E1D52AF6E8D1007764B3 /* NotificationsManager.swift */; };
 		4222E1D92AF6F5FA007764B3 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4222E1D82AF6F5FA007764B3 /* NotificationView.swift */; };
+		4222E1DB2AF7189C007764B3 /* NotFirebaseKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4222E1DA2AF7189C007764B3 /* NotFirebaseKey.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4222E1D02AF6E351007764B3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4222E1D52AF6E8D1007764B3 /* NotificationsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsManager.swift; sourceTree = "<group>"; };
 		4222E1D82AF6F5FA007764B3 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		4222E1DA2AF7189C007764B3 /* NotFirebaseKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFirebaseKey.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				4222E1BC2AF6D346007764B3 /* ToyotAssistApp.swift */,
 				4222E1D72AF6F5CA007764B3 /* View */,
 				4222E1D52AF6E8D1007764B3 /* NotificationsManager.swift */,
+				4222E1DA2AF7189C007764B3 /* NotFirebaseKey.swift */,
 				4222E1CC2AF6D42A007764B3 /* Report.swift */,
 				4222E1CA2AF6D3F9007764B3 /* ReportIntent.swift */,
 				4222E1C02AF6D348007764B3 /* Assets.xcassets */,
@@ -179,6 +182,7 @@
 				4222E1D62AF6E8D1007764B3 /* NotificationsManager.swift in Sources */,
 				4222E1CD2AF6D42A007764B3 /* Report.swift in Sources */,
 				4222E1D92AF6F5FA007764B3 /* NotificationView.swift in Sources */,
+				4222E1DB2AF7189C007764B3 /* NotFirebaseKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +241,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -294,7 +298,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
